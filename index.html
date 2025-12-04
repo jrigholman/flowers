@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sofia Flowers • Minimal Revamp</title>
+  <title>Flowers • Minimal Revamp</title>
   <style>
     :root{
       --bg1:#0b0f1a; --bg2:#11162a; --text:#f6f7fb;
@@ -28,7 +28,7 @@
     <div class="centerwrap">
       <div style="position:relative">
         <div class="halo" aria-hidden="true"></div>
-        <div class="name" id="centerName">Sofia</div>
+        <div class="name" id="centerName">Name</div>
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@
       ok('gradient stops=3', document.querySelectorAll('#scene defs #petalGrad stop').length===3);
       ok('hyphenated attr present', !!document.querySelector('#scene defs stop')?.getAttribute('stop-color'));
       ok('flower count correct', document.querySelectorAll('#scene .flower').length===CONFIG.count);
-      const failed=results.filter(r=>!r.pass); if(failed.length){console.group('Sofia Flowers tests'); results.forEach(r=>console[r.pass?'log':'error'](`${r.pass?'✔':'✖'} ${r.n}`)); console.groupEnd()} else {console.log('✔ Sofia Flowers tests passed')}
+      const failed=results.filter(r=>!r.pass); if(failed.length){console.group('Name Flowers tests'); results.forEach(r=>console[r.pass?'log':'error'](`${r.pass?'✔':'✖'} ${r.n}`)); console.groupEnd()} else {console.log('✔ Sofia Flowers tests passed')}
     }
 
     // init
